@@ -7,8 +7,11 @@ public class ladder {
 
         int h = in.nextInt();
         int v = in.nextInt();
+        double angle = Math.toRadians(v);
+        double sin = Math.sin(angle);
+        
 
-        double l = Math.sin((double)h + v);
+        System.out.println((int)Math.ceil(h/sin));
 
     }
 }
