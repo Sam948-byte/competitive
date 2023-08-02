@@ -5,7 +5,6 @@ public class twentyFortyEight {
         Scanner in = new Scanner(System.in);
 
         int[][] array = new int[4][4];
-        int place = 0;
 
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
@@ -32,16 +31,16 @@ public class twentyFortyEight {
                     if (j < 3 && array[i][j] == array[i][j + 1]) {
                         array[i][j] *= 2;
                         array[i][j + 1] = 0;
-                    } else if (j < 2 && array[i][j + 2] == 0) {
-                        if (array[i][j] == array[i][j + 2]) {
-                            array[i][j] *= 2;
-                            array[i][j + 2] = 0;
-                        }
-                    } else if (j < 1 && array[i][j + 3] == 0) {
-                        if (array[i][j] == array[i][j + 3]) {
-                            array[i][j] *= 2;
-                            array[i][j + 3] = 0;
-                        }
+                    } else if (j < 2 && array[i][j + 1] == 0 && array[i][j] == array[i][j + 2]) {
+
+                        array[i][j] *= 2;
+                        array[i][j + 2] = 0;
+
+                    } else if (j < 1 && array[i][j + 2] == 0 && array[i][j] == array[i][j + 3]) {
+
+                        array[i][j] *= 2;
+                        array[i][j + 3] = 0;
+
                     }
 
                 }
@@ -63,53 +62,84 @@ public class twentyFortyEight {
                     if (i < 3 && array[i][j] == array[i + 1][j]) {
                         array[i][j] *= 2;
                         array[i + 1][j] = 0;
-                    } else if (i < 2 && array[i + 2][j] == 0) {
-                        if (array[i][j] == array[i + 2][j]) {
-                            array[i][j] *= 2;
-                            array[i + 2][j] = 0;
-                        }
-                    } else if (i < 1 && array[i + 3][j] == 0) {
-                        if (array[i][j] == array[i + 3][j]) {
-                            array[i][j] *= 2;
-                            array[i + 3][j] = 0;
-                        }
+                    } else if (i < 2 && array[i + 1][j] == 0 && array[i][j] == array[i + 2][j]) {
+
+                        array[i][j] *= 2;
+                        array[i + 2][j] = 0;
+
+                    } else if (i < 1 && array[i + 2][j] == 0 && array[i][j] == array[i + 3][j]) {
+
+                        array[i][j] *= 2;
+                        array[i + 3][j] = 0;
+
                     }
 
                 }
             }
         } else if (direction == 2) {
-            for (int i = 3; i < 0; i--) {
-                for (int j = 3; j < 0; j--) {
-                    if (j < 3 && array[i][j] == 0 && array[i][j + 1] != 0) {
-                        array[i][j] = array[i][j + 1];
-                        array[i][j + 1] = 0;
-                    } else if (j < 2 && array[i][j] == 0 && array[i][j + 2] != 0) {
-                        array[i][j] = array[i][j + 2];
-                        array[i][j + 2] = 0;
-                    } else if (j < 1 && array[i][j] == 0 && array[i][j + 3] != 0) {
-                        array[i][j] = array[i][j + 3];
-                        array[i][j + 3] = 0;
+            for (int i = 3; i >= 0; i--) {
+                for (int j = 3; j >= 0; j--) {
+                    // System.out.println(i + "," + j);
+                    if (j > 0 && array[i][j] == 0 && array[i][j - 1] != 0) {
+                        array[i][j] = array[i][j - 1];
+                        array[i][j - 1] = 0;
+                    } else if (j > 1 && array[i][j] == 0 && array[i][j - 2] != 0) {
+                        array[i][j] = array[i][j - 2];
+                        array[i][j - 2] = 0;
+                    } else if (j > 2 && array[i][j] == 0 && array[i][j - 3] != 0) {
+                        array[i][j] = array[i][j - 3];
+                        array[i][j - 3] = 0;
                     }
 
-                    if (j < 3 && array[i][j] == array[i][j - 1]) {
+                    if (j > 0 && array[i][j] == array[i][j - 1]) {
                         array[i][j] *= 2;
                         array[i][j - 1] = 0;
-                    } else if (j < 2 && array[i][j - 2] == 0) {
-                        if (array[i][j] == array[i][j - 2]) {
-                            array[i][j] *= 2;
-                            array[i][j - 2] = 0;
-                        }
-                    } else if (j < 1 && array[i][j - 3] == 0) {
-                        if (array[i][j] == array[i][j - 3]) {
-                            array[i][j] *= 2;
-                            array[i][j - 3] = 0;
-                        }
+                    } else if (j > 1 && array[i][j - 1] == 0 && array[i][j] == array[i][j - 2]) {
+
+                        array[i][j] *= 2;
+                        array[i][j - 2] = 0;
+
+                    } else if (j > 2 && array[i][j - 2] == 0 && array[i][j] == array[i][j - 3]) {
+
+                        array[i][j] *= 2;
+                        array[i][j - 3] = 0;
+
                     }
 
                 }
             }
         } else if (direction == 3) {
+            for (int j = 3; j >= 0; j--) {
+                for (int i = 3; i >= 0; i--) {
+                    // System.out.println(i + "," + j);
+                    if (i > 0 && array[i][j] == 0 && array[i - 1][j] != 0) {
+                        array[i][j] = array[i - 1][j];
+                        array[i - 1][j] = 0;
+                    } else if (i > 1 && array[i][j] == 0 && array[i - 2][j] != 0) {
+                        array[i][j] = array[i - 2][j];
+                        array[i - 2][j] = 0;
+                    } else if (i > 2 && array[i][j] == 0 && array[i - 3][j] != 0) {
+                        array[i][j] = array[i - 3][j];
+                        array[i - 3][j] = 0;
+                    }
 
+                    if (i > 0 && array[i][j] == array[i - 1][j]) {
+                        array[i][j] *= 2;
+                        array[i - 1][j] = 0;
+                    } else if (i > 1 && array[i - 1][j] == 0 && array[i][j] == array[i - 2][j]) {
+
+                        array[i][j] *= 2;
+                        array[i - 2][j] = 0;
+
+                    } else if (i > 2 && array[i - 2][j] == 0 && array[i][j] == array[i - 3][j]) {
+
+                        array[i][j] *= 2;
+                        array[i - 3][j] = 0;
+
+                    }
+
+                }
+            }
         }
 
         for (int i = 0; i < 4; i++) {
@@ -121,3 +151,9 @@ public class twentyFortyEight {
 
     }
 }
+
+// 32 0 1024 2
+// 16 4 8 32
+// 16 512 8 16
+// 32 512 16 16
+// 3
