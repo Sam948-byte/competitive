@@ -1,5 +1,5 @@
 
-//TODO
+//TODO optimize
 import java.util.Scanner;
 
 public class keylogger {
