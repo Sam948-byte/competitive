@@ -1,3 +1,4 @@
+package notSolved;
 import java.util.Scanner;
 
 public class akcija {

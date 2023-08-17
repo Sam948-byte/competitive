@@ -1,3 +1,4 @@
+package solved;
 import java.util.Scanner;
 
 public class aDifferentProblem {
