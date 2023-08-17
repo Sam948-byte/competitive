@@ -21,28 +21,23 @@ public class akcija {
     public static int cost(int[] costs, int n) {
         int totalCost = 0;
 
-        int start = 0;
-
         if (n % 3 == 1) {
-            start = 1;
             totalCost += costs[0];
             costs = removeTheElement(costs, 0);
         } else if (n % 3 == 2) {
-            start = 2;
             totalCost += costs[0] + costs[1];
             costs = removeTheElement(costs, 0);
-            costs = removeTheElement(costs, 1);
+            costs = removeTheElement(costs, 0);
         }
 
         n = costs.length;
 
-        for (int i = 0; i < (n / 3); i++) {
-            costs = removeTheElement(costs, i * 3);
+        for (int i = 0; i < n; i++) {
+            if(i % 3 != 0){
+                totalCost += costs[i];
+            }
         }
 
-        for (int i = 0; i < costs.length; i++) {
-            totalCost += costs[i];
-        }
         return totalCost;
     }
 
