@@ -1,56 +1,51 @@
-package notSolved;
+package solved;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class akcija {
     public static void main(String[] args) {
-        long startTime = System.currentTimeMillis();
 
-        // Scanner in = new Scanner(System.in);
-
-        // int n = in.nextInt();
-
-        // int[] costs = new int[n];
-
-        // for (int i = 0; i < n; i++) {
-        //     costs[i] = in.nextInt();
-        // }
-
-        // quickSort(costs, 0, n - 1);
-
-        // System.out.print("\n" + cost(costs, n));
-
-       
-
-        try {
-        File myObj = new File("/workspace/competitive/testFiles/akcijaTest.txt");
-        Scanner in = new Scanner(myObj);
+        Scanner in = new Scanner(System.in);
 
         int n = in.nextInt();
 
         int[] costs = new int[n];
 
         for (int i = 0; i < n; i++) {
-        costs[i] = in.nextInt();
+            costs[i] = in.nextInt();
         }
 
-        quickSort(costs, 0, n - 1);
+        Arrays.sort(costs);
 
         System.out.print("\n" + cost(costs, n));
 
-        in.close();
-        } catch (FileNotFoundException e) {
-        System.out.println("An error occurred.");
-        e.printStackTrace();
-        }
+       
 
-        long endTime = System.currentTimeMillis();
+        // try {
+        // File myObj = new File("/workspace/competitive/testFiles/akcijaTest.txt");
+        // Scanner in = new Scanner(myObj);
 
-        long duration = (endTime - startTime);
+        // int n = in.nextInt();
 
-        System.out.println("\n" + duration);
+        // int[] costs = new int[n];
+
+        // for (int i = 0; i < n; i++) {
+        // costs[i] = in.nextInt();
+        // }
+
+        // quickSort(costs, 0, n - 1);
+
+        // System.out.print("\n" + cost(costs, n));
+
+        // in.close();
+        // } catch (FileNotFoundException e) {
+        // System.out.println("An error occurred.");
+        // e.printStackTrace();
+        // }
+
 
     }
 

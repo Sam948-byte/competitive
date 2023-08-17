@@ -1,4 +1,4 @@
-package notSolved;
+package current;
 
 import java.util.Scanner;
 

@@ -1,7 +1,7 @@
-package current;
+package solved;
 
+import java.util.Arrays;
 import java.util.Scanner;
-import utils.*;
 
 public class songbook {
     public static void main(String[] args) {
@@ -21,7 +21,7 @@ public class songbook {
             durations[i] = in.nextInt();
         }
 
-        durations = quicksort.main(durations, 0, durations.length - 1);
+        Arrays.sort(durations);
 
         for (int i = 0; i < songs; i++) {
             singingTime += durations[i];
