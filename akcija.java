@@ -23,19 +23,17 @@ public class akcija {
 
         if (n % 3 == 1) {
             totalCost += costs[0];
-            costs = removeTheElement(costs, 0);
+            costs = removeFirstElement(costs);
         } else if (n % 3 == 2) {
             totalCost += costs[0] + costs[1];
-            costs = removeTheElement(costs, 0);
-            costs = removeTheElement(costs, 0);
+            costs = removeFirstElement(costs);
+            costs = removeFirstElement(costs);
         }
 
         n = costs.length;
 
-        for (int i = 0; i < n; i++) {
-            if(i % 3 != 0){
-                totalCost += costs[i];
-            }
+        for (int i = 1; i < (n / 3)+ 1; i++) {
+            totalCost += costs[(i * 3) - 1] + costs[(i * 3) - 2];
         }
 
         return totalCost;
@@ -92,37 +90,14 @@ public class akcija {
         }
     }
 
-    public static int[] removeTheElement(int[] arr, int index) {
+    public static int[] removeFirstElement(int[] arr) {
+        int[] newArray = new int[arr.length - 1];
 
-        // If the array is empty
-        // or the index is not in array range
-        // return the original array
-        if (arr == null || index < 0
-                || index >= arr.length) {
-
-            return arr;
+        for(int i = 1; i < arr.length; i++){
+            newArray[i - 1] = arr[i];
         }
 
-        // Create another array of size one less
-        int[] anotherArray = new int[arr.length - 1];
-
-        // Copy the elements except the index
-        // from original array to the other array
-        for (int i = 0, k = 0; i < arr.length; i++) {
-
-            // if the index is
-            // the removal element index
-            if (i == index) {
-                continue;
-            }
-
-            // if the index is not
-            // the removal element index
-            anotherArray[k++] = arr[i];
-        }
-
-        // return the resultant array
-        return anotherArray;
+        return newArray;
     }
 
 }
