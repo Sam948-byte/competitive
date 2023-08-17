@@ -1,4 +1,7 @@
 package notSolved;
+
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class akcija {
@@ -17,10 +20,32 @@ public class akcija {
 
         System.out.print("\n" + cost(costs, n));
 
+        // try {
+        // File myObj = new File("/workspace/competitive/testFiles/akcijaTest.txt");
+        // Scanner in = new Scanner(myObj);
+
+        // int n = in.nextInt();
+
+        // int[] costs = new int[n];
+
+        // for (int i = 0; i < n; i++) {
+        // costs[i] = in.nextInt();
+        // }
+
+        // quickSort(costs, 0, n - 1);
+
+        // System.out.print("\n" + cost(costs, n));
+
+        // in.close();
+        // } catch (FileNotFoundException e) {
+        // System.out.println("An error occurred.");
+        // e.printStackTrace();
+        // }
+
     }
 
-    public static int cost(int[] costs, int n) {
-        int totalCost = 0;
+    public static long cost(int[] costs, int n) {
+        long totalCost = 0;
 
         if (n % 3 == 1) {
             totalCost += costs[0];
@@ -33,7 +58,7 @@ public class akcija {
 
         n = costs.length;
 
-        for (int i = 1; i < (n / 3)+ 1; i++) {
+        for (int i = 1; i < (n / 3) + 1; i++) {
             totalCost += costs[(i * 3) - 1] + costs[(i * 3) - 2];
         }
 
@@ -94,7 +119,7 @@ public class akcija {
     public static int[] removeFirstElement(int[] arr) {
         int[] newArray = new int[arr.length - 1];
 
-        for(int i = 1; i < arr.length; i++){
+        for (int i = 1; i < arr.length; i++) {
             newArray[i - 1] = arr[i];
         }
 
