@@ -10,7 +10,8 @@ public class laptopSticker {
         int hc = in.nextInt();
         int ws = in.nextInt();
         int hs = in.nextInt();
-//System.out.println(wc + "" + hc + "" + ws + "" + hs);
+
+        in.close();
 
         if(wc - ws >= 2) {
             if (hc - hs >= 2) {

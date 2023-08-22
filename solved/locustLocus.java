@@ -9,11 +9,7 @@ public class locustLocus {
 
         int[][] locusts = new int[n][3];
 
-        int reappear;
-
         int answer = 0;
-
-        boolean repeat = true;
 
         // gets data and puts it in array
         for (int i = 0; i < n; i++) {
@@ -21,6 +17,8 @@ public class locustLocus {
                 locusts[i][j] = in.nextInt();
             }
         }
+
+        in.close();
 
         for (int i = 0; i < n; i++) {
             int potentialAnswer = locusts[i][0] + lcm(locusts[i][1], locusts[i][2]);

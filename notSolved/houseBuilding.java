@@ -14,6 +14,8 @@ public class houseBuilding {
 
         int people = in.nextInt();
 
+        in.close();
+
         int[][] happiness = new int[height][width];
 
         switch (t) {

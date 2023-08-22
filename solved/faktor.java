@@ -9,6 +9,8 @@ public class faktor {
 
         double impact = in.nextInt();
 
+        in.close();
+
         int scientists = 1;
 
         double fakeImpact = scientists / articles;

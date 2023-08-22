@@ -8,6 +8,9 @@ public class ladder {
 
         int h = in.nextInt();
         int v = in.nextInt();
+
+        in.close();
+        
         double angle = Math.toRadians(v);
         double sin = Math.sin(angle);
         

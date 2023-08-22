@@ -8,6 +8,8 @@ public class bossBattle {
 
         int n = in.nextInt();
 
+        in.close();
+
         if(n > 3) {
             System.out.println(n - 2);
         }else{

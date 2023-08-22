@@ -1,7 +1,5 @@
 package solved;
 
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -17,6 +15,8 @@ public class akcija {
         for (int i = 0; i < n; i++) {
             costs[i] = in.nextInt();
         }
+
+        in.close();
 
         Arrays.sort(costs);
 

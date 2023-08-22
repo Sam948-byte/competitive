@@ -13,6 +13,8 @@ public class aFuriousCocktail {
         int n = in.nextInt();
         int t = in.nextInt();
 
+        in.close();
+
         Integer[] durations = new Integer[n];
 
         for (int i = 0; i < n; i++) {

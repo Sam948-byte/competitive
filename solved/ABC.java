@@ -11,6 +11,8 @@ public class ABC {
 
         String order = in.next();
 
+        in.close();
+
         int[] nums = new int[3];
 
         if(first < second && first < third) {

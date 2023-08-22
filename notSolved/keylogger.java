@@ -1,13 +1,14 @@
-package current;
+package notSolved;
 
 import java.util.Scanner;
 
 public class keylogger {
-    static Object[][] noises = { { "clank", 65 }, { "bong", 66 }, { "click", 67 }, { "tap", 68 }, { "poing", 69 },
-            { "clonk", 70 }, { "clack", 71 }, { "ping", 72 }, { "tip", 73 }, { "cloing", 74 }, { "tic", 75 },
-            { "cling", 76 }, { "bing", 77 }, { "pong", 78 }, { "clang", 79 }, { "pang", 80 }, { "clong", 81 },
-            { "tac", 82 }, { "boing", 83 }, { "boink", 84 }, { "cloink", 85 }, { "rattle", 86 }, { "clock", 87 },
-            { "toc", 88 }, { "clink", 89 }, { "tuc", 90 } };
+    static Object[][] noises = { { "clank", "bong", "click", "tap", "poing", "clonk", "clack", "ping",
+            "tip", "cloing", "tic",
+            "cling", "bing", "pong", "clang", "pang", "clong", "tac", "boing", "boink", "cloink", "rattle", "clock",
+            "toc", "clink", "tuc" },
+            { 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89,
+                    90} };
 
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
@@ -35,12 +36,16 @@ public class keylogger {
                 continue;
             }
 
-            for (int j = 0; j < noises.length; j++) {
-                if (sound.equals(noises[j][0])) {
-                    number = (int) noises[j][1];
-                    break;
-                }
+            for (int j = 0; j < noises[0].length; j++) {
+            if (sound.equals(noises[0][j])) {
+            number = (int) noises[1][j];
+            break;
             }
+            }
+
+            // int indexOf = Arrays.asList(noises[0]).indexOf(sound);
+
+            // number = (int) noises[1][indexOf];
 
             if (!shifted) {
                 print += (char) (number + 32);
@@ -49,35 +54,8 @@ public class keylogger {
             }
         }
 
+        in.close();
+
         System.out.print(print);
     }
 }
-
-// 27
-// clank
-// bong
-// click
-// tap
-// poing
-// clonk
-// clack
-// ping
-// tip
-// cloing
-// tic
-// cling
-// bing
-// pong
-// clang
-// pang
-// clong
-// tac
-// boing
-// boink
-// cloink
-// rattle
-// clock
-// toc
-// clink
-// tuc
-// pop

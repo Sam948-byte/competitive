@@ -27,6 +27,8 @@ public class aboveAverage {
                     count++;
                 }
             }
+            
+            in.close();
 
             System.out.println(df.format((double)count / n * 100) + "%");
         }

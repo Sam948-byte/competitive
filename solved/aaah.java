@@ -7,6 +7,8 @@ public class aaah {
         String able = in.nextLine();
         String doctor = in.nextLine();
 
+        in.close();
+
         if (able.length() >= doctor.length()) {
             System.out.print("go");
         } else {
