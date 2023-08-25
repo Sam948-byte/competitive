@@ -7,6 +7,8 @@ public class takeTwoStones {
 
         int input = in.nextInt();
 
+        in.close();
+
         if(input % 2 == 0){
             System.out.print("Bob");
         }else{

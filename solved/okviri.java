@@ -9,6 +9,8 @@ public class okviri {
 
         int length = input.length();
 
+        in.close();
+
         topAndBottom(length);
         middles(length);
         letter(length, input);

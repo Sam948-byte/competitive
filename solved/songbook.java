@@ -21,6 +21,8 @@ public class songbook {
             durations[i] = in.nextInt();
         }
 
+        in.close();
+
         Arrays.sort(durations);
 
         for (int i = 0; i < songs; i++) {

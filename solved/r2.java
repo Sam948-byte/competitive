@@ -9,6 +9,8 @@ public class r2 {
 
         int s = in.nextInt();
 
+        in.close();
+
         System.out.print(s * 2 - r);
     }
 }

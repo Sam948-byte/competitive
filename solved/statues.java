@@ -7,6 +7,8 @@ public class statues {
 
         int n = in.nextInt();
 
+        in.close();
+
         int printers = 1;
 
         int days = 0;

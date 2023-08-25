@@ -10,6 +10,8 @@ public class trik {
 
         String input = in.nextLine();
 
+        in.close();
+
         for(int i = 0; i < input.length(); i++){
             char letter = input.charAt(i);
             boolean temp;

@@ -24,6 +24,8 @@ public class turnItUp {
             }
         }
 
+        in.close();
+
         System.out.print(volume);
     }
 }
