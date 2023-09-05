@@ -8,6 +8,8 @@ public class findingana {
 
         String input = in.next();
 
+        in.close();
+        
         boolean found = false;
 
         for(int i = 0; i < input.length(); i++){
