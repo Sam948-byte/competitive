@@ -30,10 +30,11 @@ public class pakethanterare{
 
         for(int i = 0; i < b; i++){
             for(int j = 0; j < stock[i]; j++){
-                int index = packageNames.indexOf(in.next());
-                answers[i] += packageVersions.get(index) - in.nextInt();
+                answers[i] += packageVersions.get(packageNames.indexOf(in.next())) - in.nextInt();
             }
         }
+
+        in.close();
 
         for(int i = 0; i < b; i++){
             System.out.println(answers[i]);
