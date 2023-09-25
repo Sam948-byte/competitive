@@ -1,4 +1,4 @@
-package current;
+package notSolved;
 
 import java.util.Scanner;
 import java.util.ArrayList;
