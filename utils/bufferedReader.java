@@ -1,3 +1,4 @@
+package utils;
 //use this bad boy when it times out
 // program using BufferedReader
 import java.io.BufferedReader;
