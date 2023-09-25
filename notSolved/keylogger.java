@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class keylogger {
 
-    int index;
+    static int index;
 
     static ArrayList<String> noises = new ArrayList<>(
             Arrays.asList("clank", "bong", "click", "tap", "poing", "clonk", "clack", "ping", "tip", "cloing", "tic",
