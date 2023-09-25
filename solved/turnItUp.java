@@ -1,10 +1,10 @@
 package solved;
 
-import java.util.Scanner;
+import utils.FastReader;
 
 public class turnItUp {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         int n = in.nextInt();
 
@@ -24,7 +24,7 @@ public class turnItUp {
             }
         }
 
-        in.close();
+        
 
         System.out.print(volume);
     }

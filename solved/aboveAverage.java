@@ -1,10 +1,10 @@
 package solved;
 import java.text.DecimalFormat;
-import java.util.Scanner;
+import utils.FastReader;
 
 public class aboveAverage {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
         DecimalFormat df = new DecimalFormat("#.###");
         df.setMinimumFractionDigits(3);
         int cases = in.nextInt();
@@ -28,7 +28,7 @@ public class aboveAverage {
                 }
             }
             
-            in.close();
+            
 
             System.out.println(df.format((double)count / n * 100) + "%");
         }

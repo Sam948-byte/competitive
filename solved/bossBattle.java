@@ -1,14 +1,14 @@
 package solved;
 
-import java.util.Scanner;
+import utils.FastReader;
 
 public class bossBattle {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         int n = in.nextInt();
 
-        in.close();
+        
 
         if(n > 3) {
             System.out.println(n - 2);

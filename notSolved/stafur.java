@@ -1,16 +1,16 @@
 package notSolved;
 
-import java.util.Scanner;
+import utils.FastReader;
 
 public class stafur {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         String check = in.next();
 
         char letter = check.charAt(0);
 
-        in.close();
+        
 
         if (letter <= 90 && letter >= 65) {
             if (letter == 65 || letter == 69 || letter == 73 ||

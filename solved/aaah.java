@@ -1,13 +1,13 @@
 package solved;
-import java.util.Scanner;
+import utils.FastReader;
 
 public class aaah {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
         String able = in.nextLine();
         String doctor = in.nextLine();
 
-        in.close();
+        
 
         if (able.length() >= doctor.length()) {
             System.out.print("go");

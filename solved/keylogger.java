@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Scanner;
+import utils.FastReader;
 import java.util.StringTokenizer;
 
 public class keylogger {
@@ -68,7 +68,7 @@ public class keylogger {
     }
 
     public static void main(String args[]) {
-        // Scanner in = new Scanner(System.in);
+        // FastReader in = new FastReader();
         FastReader in = new FastReader();
         boolean shifted = false;
         StringBuilder print = new StringBuilder();

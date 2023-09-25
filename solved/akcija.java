@@ -1,12 +1,12 @@
 package solved;
 
 import java.util.Arrays;
-import java.util.Scanner;
+import utils.FastReader;
 
 public class akcija {
     public static void main(String[] args) {
 
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         int n = in.nextInt();
 
@@ -16,7 +16,7 @@ public class akcija {
             costs[i] = in.nextInt();
         }
 
-        in.close();
+        
 
         Arrays.sort(costs);
 
@@ -26,7 +26,7 @@ public class akcija {
 
         // try {
         // File myObj = new File("/workspace/competitive/testFiles/akcijaTest.txt");
-        // Scanner in = new Scanner(myObj);
+        // FastReader in = new FastReader(myObj);
 
         // int n = in.nextInt();
 
@@ -40,7 +40,7 @@ public class akcija {
 
         // System.out.print("\n" + cost(costs, n));
 
-        // in.close();
+        // 
         // } catch (FileNotFoundException e) {
         // System.out.println("An error occurred.");
         // e.printStackTrace();

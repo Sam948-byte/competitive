@@ -1,6 +1,6 @@
 package notSolved;
 
-import java.util.Scanner;
+import utils.FastReader;
 
 
 import utils.FastReader;

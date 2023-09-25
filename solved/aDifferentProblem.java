@@ -9,7 +9,7 @@ public class aDifferentProblem {
             long one = in.nextLong();
             long two = in.nextLong();
 
-            in.close();
+            
 
             System.out.println(Math.abs(one - two));
         }

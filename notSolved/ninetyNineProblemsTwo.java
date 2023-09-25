@@ -1,11 +1,11 @@
 package notSolved;
 
 import java.util.Arrays;
-import java.util.Scanner;
+import utils.FastReader;
 
 public class ninetyNineProblemsTwo {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         int n = in.nextInt();
 
@@ -31,7 +31,7 @@ public class ninetyNineProblemsTwo {
             level[i] = in.nextInt();
         }
 
-        in.close();
+        
 
         Arrays.sort(difficulties);
 

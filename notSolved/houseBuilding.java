@@ -1,10 +1,10 @@
 package notSolved;
 
-import java.util.Scanner;
+import utils.FastReader;
 
 public class houseBuilding {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         int t = in.nextInt();
 
@@ -14,7 +14,7 @@ public class houseBuilding {
 
         int people = in.nextInt();
 
-        in.close();
+        
 
         int[][] happiness = new int[height][width];
 

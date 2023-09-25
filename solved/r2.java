@@ -1,15 +1,15 @@
 package solved;
-import java.util.Scanner;
+import utils.FastReader;
 
 public class r2 {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         int r = in.nextInt();
 
         int s = in.nextInt();
 
-        in.close();
+        
 
         System.out.print(s * 2 - r);
     }

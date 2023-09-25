@@ -2,11 +2,11 @@ package notSolved;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
+import utils.FastReader;
 
 public class froggereasy {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         int n = in.nextInt();
 
@@ -26,7 +26,7 @@ public class froggereasy {
             squares[i] = in.nextInt();
         }
 
-        in.close();
+        
 
         while (true) {
             if (s < 0) {

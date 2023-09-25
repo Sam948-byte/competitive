@@ -1,11 +1,11 @@
 package solved;
 
 import java.util.Arrays;
-import java.util.Scanner;
+import utils.FastReader;
 
 public class songbook {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         int time = in.nextInt() * 60;
 
@@ -21,7 +21,7 @@ public class songbook {
             durations[i] = in.nextInt();
         }
 
-        in.close();
+        
 
         Arrays.sort(durations);
 

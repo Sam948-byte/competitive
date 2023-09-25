@@ -1,9 +1,9 @@
 package solved;
-import java.util.Scanner;
+import utils.FastReader;
 
 public class oddities {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         int n = in.nextInt();
 
@@ -13,7 +13,7 @@ public class oddities {
             cases[i] = in.nextInt();
         }
 
-        in.close();
+        
 
         for (int i = 0; i < n; i++) {
             if (cases[i] % 2 == 0) {

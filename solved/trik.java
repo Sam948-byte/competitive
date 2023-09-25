@@ -1,16 +1,16 @@
 package solved;
 
-import java.util.Scanner;
+import utils.FastReader;
 
 public class trik {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         boolean[] place = {true, false, false};
 
         String input = in.nextLine();
 
-        in.close();
+        
 
         for(int i = 0; i < input.length(); i++){
             char letter = input.charAt(i);

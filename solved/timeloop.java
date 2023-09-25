@@ -1,13 +1,13 @@
 package solved;
-import java.util.Scanner;
+import utils.FastReader;
 
 public class timeloop {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         int n = in.nextInt();
 
-        in.close();
+        
 
         for (int i = 1; i <= n; i++) {
             System.out.println(i + " Abracadabra");

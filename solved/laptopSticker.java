@@ -1,17 +1,17 @@
 package solved;
 
-import java.util.Scanner;
+import utils.FastReader;
 
 public class laptopSticker {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         int wc = in.nextInt();
         int hc = in.nextInt();
         int ws = in.nextInt();
         int hs = in.nextInt();
 
-        in.close();
+        
 
         if(wc - ws >= 2) {
             if (hc - hs >= 2) {

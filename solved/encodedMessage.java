@@ -1,10 +1,10 @@
 package solved;
 
-import java.util.Scanner;
+import utils.FastReader;
 
 public class encodedMessage {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         int n = in.nextInt();
 
@@ -14,7 +14,7 @@ public class encodedMessage {
             messages[i] = in.next();
         }
 
-        in.close();
+        
 
         for (int i = 0; i < n; i++) {
             int squareSize = (int) Math.sqrt(messages[i].length());

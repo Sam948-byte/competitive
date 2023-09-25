@@ -1,11 +1,11 @@
 package notSolved;
 
 
-import java.util.Scanner;
+import utils.FastReader;
 
 public class twentyFortyEight {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         int[][] array = new int[4][4];
 
@@ -17,7 +17,7 @@ public class twentyFortyEight {
 
         int direction = in.nextInt();
 
-        in.close();
+        
 
         if (direction == 0) {
             for (int i = 0; i < 4; i++) {

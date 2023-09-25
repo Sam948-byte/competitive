@@ -1,15 +1,15 @@
 package solved;
-import java.util.Scanner;
+import utils.FastReader;
 
 public class faktor {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         int articles = in.nextInt();
 
         double impact = in.nextInt();
 
-        in.close();
+        
 
         int scientists = 1;
 

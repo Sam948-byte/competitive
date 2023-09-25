@@ -3,11 +3,11 @@ package solved;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.ArrayList;
-import java.util.Scanner;
+import utils.FastReader;
 
 public class basicremains {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         int base;
 
@@ -28,7 +28,7 @@ public class basicremains {
             
         }
 
-        in.close();
+        
 
         for(int i = 0; i < answers.size(); i++){
             System.out.println(answers.get(i));

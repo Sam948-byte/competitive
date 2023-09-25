@@ -2,11 +2,11 @@ package notSolved;
 
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.Scanner;
+import utils.FastReader;
 
 public class pizzubestun {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         int n = in.nextInt();
 
@@ -18,7 +18,7 @@ public class pizzubestun {
             costs[i] = in.nextInt();
         }
 
-        in.close();
+        
 
         Integer cost = 0;
 

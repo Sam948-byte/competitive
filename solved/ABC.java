@@ -1,9 +1,9 @@
 package solved;
-import java.util.Scanner;
+import utils.FastReader;
 
 public class ABC {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         int first = in.nextInt();
         int second = in.nextInt();
@@ -11,7 +11,7 @@ public class ABC {
 
         String order = in.next();
 
-        in.close();
+        
 
         int[] nums = new int[3];
 

@@ -1,11 +1,11 @@
 package notSolved;
 
 import java.util.ArrayList;
-import java.util.Scanner;
+import utils.FastReader;
 
 public class relatives{
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         long n;
 
@@ -21,7 +21,7 @@ public class relatives{
             counts.add(count);
         }
 
-        in.close();
+        
 
         for(int i = 0; i < counts.size(); i++){
             System.out.println(counts.get(i));

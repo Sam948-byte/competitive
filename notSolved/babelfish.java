@@ -2,11 +2,11 @@ package notSolved;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
+import utils.FastReader;
 
 public class babelfish {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         List<String> plaintext = new ArrayList<String>();
 
@@ -34,7 +34,7 @@ public class babelfish {
 
         }
 
-        in.close();
+        
 
         int index;
 

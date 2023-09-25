@@ -1,10 +1,10 @@
 package solved;
 
-import java.util.Scanner;
+import utils.FastReader;
 
 public class pet {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         int[][] scores = new int[5][4];
 
@@ -18,7 +18,7 @@ public class pet {
             }
         }
 
-        in.close();
+        
 
         for(int i = 0; i < 5; i++){
             for(int j = 0; j < 4; j++){

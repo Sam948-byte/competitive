@@ -1,10 +1,10 @@
 package solved;
 
-import java.util.Scanner;
+import utils.FastReader;
 
 public class cetvrta {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         int[][] pairs = new int[3][2];
         int first = 0;

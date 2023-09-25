@@ -2,11 +2,11 @@ package notSolved;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Scanner;
+import utils.FastReader;
 
 public class inflation2 {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         int n = in.nextInt();
 
@@ -35,7 +35,7 @@ public class inflation2 {
             }
         }
 
-        in.close();
+        
 
         for (int i = 0; i < q; i++) {
             if (which[i] == 'i') {

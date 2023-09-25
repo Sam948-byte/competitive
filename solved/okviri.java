@@ -1,15 +1,15 @@
 package solved;
-import java.util.Scanner;
+import utils.FastReader;
 
 public class okviri {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         String input = in.nextLine();
 
         int length = input.length();
 
-        in.close();
+        
 
         topAndBottom(length);
         middles(length);

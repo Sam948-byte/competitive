@@ -1,13 +1,13 @@
 package solved;
-import java.util.Scanner;
+import utils.FastReader;
 
 public class apaxiaaans {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         String input = in.next();
 
-        in.close();
+        
 
         String output = input.substring(0, 1);
 

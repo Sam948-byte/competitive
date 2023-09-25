@@ -1,11 +1,11 @@
 package solved;
 
 import java.util.Arrays;
-import java.util.Scanner;
+import utils.FastReader;
 
 public class platforme {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         int n = in.nextInt();
 
@@ -17,7 +17,7 @@ public class platforme {
             platforms[i][2] = in.nextInt();
         }
 
-        in.close();
+        
 
         int maxHeight = findMax(platforms, 0);
         int maxLength = findMax(platforms, 2);

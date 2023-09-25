@@ -1,10 +1,10 @@
 package notSolved;
 
-import java.util.Scanner;
+import utils.FastReader;
 
 public class refrigator {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         int costOne = in.nextInt();
 
@@ -16,7 +16,7 @@ public class refrigator {
 
         int number = in.nextInt();
 
-        in.close();
+        
 
         double ratioOne = costOne/spaceOne;
 

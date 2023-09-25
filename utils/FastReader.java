@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-
+ 
 	public  class FastReader {
 		BufferedReader br;
 		StringTokenizer st;
@@ -33,6 +33,8 @@ import java.util.StringTokenizer;
 		public int nextInt() { return Integer.parseInt(next()); }
 
 		public long nextLong() { return Long.parseLong(next()); }
+
+		public float nextFloat() { return Float.parseFloat(next()); }
 
 		public double nextDouble()
 		{

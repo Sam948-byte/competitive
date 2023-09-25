@@ -1,10 +1,10 @@
 package notSolved;
 
-import java.util.Scanner;
+import utils.FastReader;
 
 public class candy {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         int n = in.nextInt();
 
@@ -18,7 +18,7 @@ public class candy {
             candy[i] = in.nextLong();
         }
 
-        in.close();
+        
 
 
     }

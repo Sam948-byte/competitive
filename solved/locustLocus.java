@@ -1,9 +1,9 @@
 package solved;
-import java.util.Scanner;
+import utils.FastReader;
 
 public class locustLocus {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         int n = in.nextInt();
 
@@ -18,7 +18,7 @@ public class locustLocus {
             }
         }
 
-        in.close();
+        
 
         for (int i = 0; i < n; i++) {
             int potentialAnswer = locusts[i][0] + lcm(locusts[i][1], locusts[i][2]);

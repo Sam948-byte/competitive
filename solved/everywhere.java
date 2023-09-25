@@ -1,11 +1,11 @@
 package solved;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
+import utils.FastReader;
 
 public class everywhere {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         int t = in.nextInt();
 
@@ -21,7 +21,7 @@ public class everywhere {
             }
         }
 
-        in.close();
+        
 
         List<String> distinctChecker = new ArrayList<String>();
 

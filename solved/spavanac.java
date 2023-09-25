@@ -1,16 +1,16 @@
 package solved;
 
-import java.util.Scanner;
+import utils.FastReader;
 
 public class spavanac {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         int hours = in.nextInt();
 
         int minutes = in.nextInt();
 
-        in.close();
+        
 
         minutes += hours * 60;
 

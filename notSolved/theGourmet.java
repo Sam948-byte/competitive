@@ -1,10 +1,10 @@
 package notSolved;
 
-import java.util.Scanner;
+import utils.FastReader;
 
 public class theGourmet {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         int m = in.nextInt();
 

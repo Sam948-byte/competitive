@@ -1,11 +1,11 @@
 package solved;
 
 import java.math.BigDecimal;
-import java.util.Scanner;
+import utils.FastReader;
 
 public class popkorn {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         BigDecimal contestants = new BigDecimal(in.nextLong());
         // System.out.println(contestants);

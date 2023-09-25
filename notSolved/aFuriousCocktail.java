@@ -3,17 +3,17 @@ package notSolved;
 
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.Scanner;
+import utils.FastReader;
 
 public class aFuriousCocktail {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         boolean works = true;
         int n = in.nextInt();
         int t = in.nextInt();
 
-        in.close();
+        
 
         Integer[] durations = new Integer[n];
 

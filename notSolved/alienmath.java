@@ -2,11 +2,11 @@ package notSolved;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
+import utils.FastReader;
 
 public class alienmath {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         int base = in.nextInt();
 
@@ -18,7 +18,7 @@ public class alienmath {
 
         String input = in.next();
 
-        in.close();
+        
 
         int output = 0;
 

@@ -1,10 +1,10 @@
 package solved;
 
-import java.util.Scanner;
+import utils.FastReader;
 
 public class ullendullendoff {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         int n = in.nextInt();
 
@@ -16,7 +16,7 @@ public class ullendullendoff {
             names[i] = in.next();
         }
 
-        in.close();
+        
 
        for(int i = 0; i < 13; i++){
         picked++;

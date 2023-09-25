@@ -1,10 +1,10 @@
 package solved;
 
-import java.util.Scanner;
+import utils.FastReader;
 
 public class vefthjonatjon {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         int n = in.nextInt();
 
@@ -23,7 +23,7 @@ public class vefthjonatjon {
 
         }
 
-        in.close();
+        
 
         int cpu = number(parts[0]);
         int memory = number(parts[1]);

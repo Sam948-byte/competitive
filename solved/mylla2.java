@@ -1,10 +1,10 @@
 package solved;
 
-import java.util.Scanner;
+import utils.FastReader;
 
 public class mylla2 {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         String[][] grid = new String[3][3];
 
@@ -12,7 +12,7 @@ public class mylla2 {
             grid[i] = in.next().split("");
        }
 
-        in.close();
+        
 
         boolean found = false;
 
