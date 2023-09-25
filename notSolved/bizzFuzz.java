@@ -1,18 +1,17 @@
 package notSolved;
 
-import java.util.Scanner;
+
+import utils.FastReader;
 
 public class bizzFuzz {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
         long count = 0;
 
         long a = in.nextLong();
         long b = in.nextLong();
         long c = in.nextLong();
         long d = in.nextLong();
-
-        in.close();
         
         long difference = b - a;
 
@@ -61,4 +60,7 @@ public class bizzFuzz {
         }
         return a;
     }
+
+    
+
 }

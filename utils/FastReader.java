@@ -4,11 +4,10 @@ package utils;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Scanner;
 import java.util.StringTokenizer;
 
-public class fastReader {
-	static class FastReader {
+
+	public  class FastReader {
 		BufferedReader br;
 		StringTokenizer st;
 
@@ -18,7 +17,7 @@ public class fastReader {
 				new InputStreamReader(System.in));
 		}
 
-		String next()
+		public String next()
 		{
 			while (st == null || !st.hasMoreElements()) {
 				try {
@@ -31,16 +30,16 @@ public class fastReader {
 			return st.nextToken();
 		}
 
-		int nextInt() { return Integer.parseInt(next()); }
+		public int nextInt() { return Integer.parseInt(next()); }
 
-		long nextLong() { return Long.parseLong(next()); }
+		public long nextLong() { return Long.parseLong(next()); }
 
-		double nextDouble()
+		public double nextDouble()
 		{
 			return Double.parseDouble(next());
 		}
 
-		String nextLine()
+		public String nextLine()
 		{
 			String str = "";
 			try {
@@ -57,4 +56,3 @@ public class fastReader {
 			return str;
 		}
 	}
-}

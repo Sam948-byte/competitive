@@ -1,11 +1,10 @@
-package notSolved;
-
 import java.util.ArrayList;
-import java.util.Scanner;
+
+import utils.FastReader;
 
 public class haypoints {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
         int m = in.nextInt();
 
@@ -35,9 +34,6 @@ public class haypoints {
             worth = 0;
         }
 
-        in.close();
-
-        
-
     }
+
 }
