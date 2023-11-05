@@ -20,7 +20,7 @@ public class babelfish {
 
         String line;
 
-        while ((line = in.nextLine()).matches(".*[a-zA-Z]+.*")) {
+        while (!(line = in.nextLine()).equals("")) {
 
             arr = line.split(" ");
             plaintext.add(arr[0]);
