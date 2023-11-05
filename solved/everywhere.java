@@ -13,6 +13,7 @@ public class everywhere {
 
         String[][] cities = new String[t][];
 
+        //read in each test case
         for(int i = 0; i < t; i++){
             cases[i] = in.nextInt();
             cities[i] = new String[cases[i]];
@@ -21,13 +22,14 @@ public class everywhere {
             }
         }
 
-        
-
+        //use a list to keep track of all the distinct cities
         List<String> distinctChecker = new ArrayList<String>();
 
         for(int i = 0; i < t; i++){
             int distinct = 0;
+            //go through each city in the test case
             for(int j = 0; j < cases[i]; j++){
+                //if the city is not in the list, add it and increment the distinct counter
                 if(!distinctChecker.contains(cities[i][j])){
                     distinctChecker.add(cities[i][j]);
                     distinct++;
