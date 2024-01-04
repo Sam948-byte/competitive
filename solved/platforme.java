@@ -1,6 +1,5 @@
 package solved;
 
-import java.util.Arrays;
 import utils.FastReader;
 
 public class platforme {

@@ -6,7 +6,7 @@ public class sith{
 public static void main(String[] args){
     FastReader in = new FastReader();
 
-    String name = in.nextLine();
+    in.nextLine();
 
     int a = in.nextInt();
 

@@ -6,7 +6,7 @@ public class solvingForCarrots {
     public static void main(String[] args) {
         FastReader in = new FastReader();
 
-        int n = in.nextInt();
+        in.nextInt();
 
         int p = in.nextInt();
 

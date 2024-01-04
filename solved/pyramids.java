@@ -15,6 +15,8 @@ public class pyramids {
             i+=2;
         }
 
+        in.close();
+
         System.out.print(layers);
     }
 }

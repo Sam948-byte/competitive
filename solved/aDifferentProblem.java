@@ -13,5 +13,6 @@ public class aDifferentProblem {
 
             System.out.println(Math.abs(one - two));
         }
+        in.close();
     }
 }
