@@ -1,27 +1,30 @@
 package notSolved;
-
+//too slow
+import java.util.Collections;
 import java.util.List;
-import java.util.Scanner;
 import java.util.stream.Collectors;
+
+import utils.FastReader;
 
 public class gangur {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        FastReader in = new FastReader();
 
-        String str = in.nextLine();
-
-        in.close();
+        String str = in.next();
 
         List<Character> hallway = str.chars().mapToObj(e -> (char) e).collect(Collectors.toList());
+        int passes = 0;
 
-        int left = 0;
-        int right = 0;
+        int i;
 
-        for(Character c : hallway){
-            if(c == '<') left++;
-            if(c == '>') right++;
+        
+        while((i = hallway.indexOf('>')) != -1){
+        hallway.set(i, '-');
+        passes += Collections.frequency(hallway.subList(i, hallway.size()), '<');
         }
 
-        System.out.println(left * right);
+        System.out.println(passes);
+
     }
+
 }
