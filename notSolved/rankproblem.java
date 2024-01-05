@@ -1,49 +1,32 @@
-package notSolved;
 import java.util.LinkedList;
-
-import utils.FastReader;
+import java.util.Scanner;
 
 public class rankproblem {
-    class Node {
-        int data;
-        Node next;
-    }
     public static void main(String[] args) {
-        FastReader in = new FastReader();
+        Scanner in = new Scanner(System.in);
 
-        int n = in.nextInt();
+        LinkedList<Integer> teams = new LinkedList<Integer>();
 
-        int games = in.nextInt();
+        int numTeams = in.nextInt();
+        int numMatches = in.nextInt();
 
-        LinkedList<Integer> teams = new LinkedList();
-
-        for (int i = 1; i <= n; i++) {
+        for(int i = 1; i <= numTeams; i++){
             teams.add(i);
         }
 
-        for (int i = 0; i < games; i++) {
-            int first = findLinkedList(teams, Integer.parseInt(in.next().substring(1, 2)));
-            int second = findLinkedList(teams, Integer.parseInt(in.next().substring(1, 2)));
+        Match[] matches = new Match[numMatches];
 
-            if (first > second) {
+        
+    }
 
-                teams.add(first + 1, teams.get(second));
-                teams.remove(second);
-            }
-        }
+    public class Match{
+        int winner;
+        int loser;
 
-        for(int i = 0; i < teams.size(); i++){
-            System.out.println("T" + teams.get(i));
+        public void match(int winner, int loser){
+            this.winner = winner;
+            this.loser = loser;
         }
     }
 
-    public static int findLinkedList(LinkedList ll, Object element) {
-        for (int i = 0; i < ll.size(); i++) {
-            Object llElement = ll.get(i);
-
-            if (llElement == element) return i;
-            
-        }
-        return -1;
-    }
 }
