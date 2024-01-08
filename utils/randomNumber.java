@@ -1,7 +1,7 @@
 package utils;
 
 public class randomNumber {
-    public static int randomNumber(int max, int min) {
+    public static int generate(int max, int min) {
 
         int range = max - min + 1;
 
