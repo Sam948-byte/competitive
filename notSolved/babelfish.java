@@ -1,51 +1,29 @@
-package notSolved;
+import java.util.HashMap;
+import java.util.Map;
 
-import java.util.ArrayList;
-import java.util.List;
 import utils.FastReader;
 
 public class babelfish {
     public static void main(String[] args) {
         FastReader in = new FastReader();
 
-        List<String> plaintext = new ArrayList<String>();
+        Map<String, String> map = new HashMap<String, String>();
+        String entry = in.next();
+        String key = in.next();
+        String line = entry + " " + key;
 
-        List<String> cipher = new ArrayList<String>();
+        do {
+            map.put(line.split(" ")[1], line.split(" ")[0]);
+        } while ((line = in.nextLine()).matches(".*[a-zA-Z]+.*"));
 
-        List<String> coded = new ArrayList<String>();
+        String word;
+        String element;
 
-        String[] arr = new String[2];
-
-        boolean which = true;
-
-        String line;
-
-        while (!(line = in.nextLine()).equals("")) {
-
-            arr = line.split(" ");
-            plaintext.add(arr[0]);
-            cipher.add(arr[1]);
-
-        }
-
-        while ((line = in.nextLine()).matches(".*[a-zA-Z]+.*")) {
-
-            coded.add(line);
-
-        }
-
-        
-
-        int index;
-
-        for (int i = 0; i < coded.size(); i++) {
-            index = cipher.indexOf(coded.get(i));
-            if (index == -1) {
-                System.out.println("eh");
-            } else {
-                System.out.println(plaintext.get(index));
-            }
-        }
+        do {
+            word = in.next();
+            element = map.get(word);
+            System.out.println((element == null) ? "eh" : element);
+        } while (in.hasNext());
 
     }
 }

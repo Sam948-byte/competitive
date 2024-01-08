@@ -6,57 +6,63 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
- 
-	public  class FastReader {
-		BufferedReader br;
-		StringTokenizer st;
+public class FastReader {
+	BufferedReader br;
+	StringTokenizer st;
 
-		public FastReader()
-		{
-			br = new BufferedReader(
+	public FastReader() {
+		br = new BufferedReader(
 				new InputStreamReader(System.in));
+	}
+
+	public boolean hasNext() {
+		try {
+			return br.ready();
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
 
-		public String next()
-		{
-			while (st == null || !st.hasMoreElements()) {
-				try {
-					st = new StringTokenizer(br.readLine());
-				}
-				catch (IOException e) {
-					e.printStackTrace();
-				}
-			}
-			return st.nextToken();
-		}
+		return false;
+	}
 
-		public int nextInt() { return Integer.parseInt(next()); }
-
-		public long nextLong() { return Long.parseLong(next()); }
-
-		public float nextFloat() { return Float.parseFloat(next()); }
-
-		
-
-		public double nextDouble()
-		{
-			return Double.parseDouble(next());
-		}
-
-		public String nextLine()
-		{
-			String str = "";
+	public String next() {
+		while (st == null || !st.hasMoreElements()) {
 			try {
-				if(st.hasMoreTokens()){
-					str = st.nextToken("\n");
-				}
-				else{
-					str = br.readLine();
-				}
-			}
-			catch (IOException e) {
+				st = new StringTokenizer(br.readLine());
+			} catch (IOException e) {
 				e.printStackTrace();
 			}
-			return str;
 		}
+		return st.nextToken();
 	}
+
+	public int nextInt() {
+		return Integer.parseInt(next());
+	}
+
+	public long nextLong() {
+		return Long.parseLong(next());
+	}
+
+	public float nextFloat() {
+		return Float.parseFloat(next());
+	}
+
+	public double nextDouble() {
+		return Double.parseDouble(next());
+	}
+
+	public String nextLine() {
+		String str = "";
+		try {
+			if (st.hasMoreTokens()) {
+				str = st.nextToken("\n");
+			} else {
+				str = br.readLine();
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return str;
+	}
+}
