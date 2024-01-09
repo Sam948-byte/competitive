@@ -1,4 +1,4 @@
-package notSolved;
+
 import java.math.BigDecimal;
 import java.math.MathContext;
 import utils.FastReader;

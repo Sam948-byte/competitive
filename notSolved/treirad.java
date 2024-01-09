@@ -1,4 +1,3 @@
-package notSolved;
 
 public class treirad {
     public static void main(String[] args) {

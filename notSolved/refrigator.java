@@ -1,4 +1,3 @@
-package notSolved;
 
 import utils.FastReader;
 

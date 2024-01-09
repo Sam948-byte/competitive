@@ -1,4 +1,3 @@
-package notSolved;
 
 import java.util.Arrays;
 import utils.FastReader;

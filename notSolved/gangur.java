@@ -1,4 +1,4 @@
-package notSolved;
+
 //too slow
 import java.util.Collections;
 import java.util.List;
