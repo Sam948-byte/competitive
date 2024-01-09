@@ -1,9 +1,3 @@
-
-//too slow
-import java.util.Collections;
-import java.util.List;
-import java.util.stream.Collectors;
-
 import utils.FastReader;
 
 public class gangur {
@@ -12,18 +6,16 @@ public class gangur {
 
         String str = in.next();
 
-        List<Character> hallway = str.chars().mapToObj(e -> (char) e).collect(Collectors.toList());
-        int passes = 0;
-
-        int i;
-
         
-        while((i = hallway.indexOf('>')) != -1){
-        hallway.set(i, '-');
-        passes += Collections.frequency(hallway.subList(i, hallway.size()), '<');
+        long right = 0;
+        long total = 0;
+
+        for(Character c : str.toCharArray()){
+            if(c == '>') right++;
+            if(c == '<') total += right;
         }
 
-        System.out.println(passes);
+        System.out.println(total);
 
     }
 
