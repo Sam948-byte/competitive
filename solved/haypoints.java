@@ -1,5 +1,4 @@
-
-import java.util.ArrayList;
+import java.util.HashMap;
 
 import utils.FastReader;
 
@@ -11,24 +10,21 @@ public class haypoints {
 
         int n = in.nextInt();
 
-        ArrayList<String> words = new ArrayList<String>();
-        ArrayList<Integer> values = new ArrayList<Integer>();
+        HashMap<String, Integer> points = new HashMap<>();
 
         for (int i = 0; i < m; i++) {
-            words.add(in.next());
-            values.add(in.nextInt());
+            points.put(in.next(), in.nextInt());
         }
 
         String line;
 
         int worth = 0;
+        Integer value;
 
         for (int i = 0; i < n; i++) {
             while (!(line = in.next()).equals(".")) {
-
-                int index = words.indexOf(line);
-                if (index != -1) {
-                    worth += values.get(index);
+                if((value = points.get(line)) != null){
+                    worth += value;
                 }
             }
             System.out.println(worth);
