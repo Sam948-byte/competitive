@@ -4,16 +4,18 @@ public class trollhunt {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        int bridges = in.nextInt();
+        int bridges = in.nextInt() - 1;
 
         int knights = in.nextInt();
 
         int groupSize = in.nextInt();
 
-        int groups = (int) (knights/groupSize);
+        in.close();
 
-        int days = (int) (bridges/groups);
+        double groups = (int) (knights/groupSize);
 
-        System.out.println(days);
+        double days = Math.ceil(bridges/groups);
+
+        System.out.println((int) days);
     }
 }
