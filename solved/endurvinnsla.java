@@ -1,3 +1,5 @@
+package solved;
+
 import utils.FastReader;
 
 public class endurvinnsla {
