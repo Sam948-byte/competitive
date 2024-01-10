@@ -1,25 +1,20 @@
-package notSolved;
-
 import utils.FastReader;
 
 public class endurvinnsla {
     public static void main(String[] args) {
         FastReader in = new FastReader();
 
-        String name = in.next();
+        in.next();
 
         float percent = in.nextFloat();
 
         int n = in.nextInt();
 
-        int plastic = 0;
-        int nonPlastic = 0;
+        float nonPlastic = 0;
 
         for(int i = 0; i < n; i++){
-            if(in.next().matches("ekki")){
+            if(in.nextLine().matches("ekki plast")){
                 nonPlastic++;
-            }else{
-                plastic++;
             }
         }
 
