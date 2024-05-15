@@ -24,7 +24,7 @@ public class stadiljus {
 
         int returnValue = n;
 
-        int total = 0;
+        double total = 0;
 
         for(int i = 1; i <= list.size(); i++) {
             int individualCost = list.get(i - 1) * cost;
