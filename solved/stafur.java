@@ -11,18 +11,15 @@ public class stafur {
 
         in.close();
 
-        if (letter <= 90 && letter >= 65) {
-            if (letter == 65 || letter == 69 || letter == 73 ||
+        if (letter == 65 || letter == 69 || letter == 73 ||
                     letter == 79 || letter == 85) {
                 System.out.print("Jebb");
             } else if(letter == 89){
-                System.out.print("Jebb");
+                System.out.print("Kannski");
             }
             else {
                 System.out.print("Neibb");
             }
-        } else {
-            System.out.print("Kannski");
         }
     }
 }
