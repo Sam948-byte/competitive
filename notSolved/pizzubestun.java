@@ -23,13 +23,9 @@ public class pizzubestun {
 
         Arrays.sort(costs, Collections.reverseOrder());
 
-        
 
-        for(int i = 0; i < n; i++){
-            if(i % 2 == 1){
-                costs[i] = 0;
-            }
-        }
+        
+        n = (n % 2 == 0) ? n / 2 : n / 2 + 1;
 
         for(int i = 0; i < n; i++){
             cost += costs[i];
